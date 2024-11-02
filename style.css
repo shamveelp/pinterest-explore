@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+    z-index: 3;
+  }
+  
+  .nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+.main-logo{
+    font-size: 35px;
+    margin-right: 8px;
+    color: #fb0026;
+} 
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+  }
+  
+  .logo-name {
+    color: #b8132caf;
+    font-size: 18px;
+    font-weight: 600;
+  }
+  
+  .links {
+    margin-left: 5px;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .links a {
+    text-decoration: none;
+    color: #111;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 15px;
+  }
+
+  .explore{
+    background-color: #111;
+    border-radius: 25px;
+    
+  }
+  
+  .search {
+
+    flex-grow: 1;
+    justify-content: center;
+    position: relative;
+    background-color: rgb(234, 247, 247);
+    margin-left: 25px;
+    border-radius: 25px;
+  }
+  .search:hover{
+    background-color: rgb(195, 206, 206);
+    cursor: text;
+  }
+  .search input {
+    outline: none;
+    border: none;
+    width: 100%;
+    max-width: 650px;
+    padding: 15px 0 15px 0;
+    font-size: 16px;
+    background-color: rgb(234, 247, 247);
+  }
+  .search input:hover{
+    background-color: rgb(195, 206, 206);
+  }
+  .search-icon{
+    color: gray;
+  }
+  
+  .login {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .login button {
+    padding: 19px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 35px;
+    cursor: pointer;
+  }
+  .log-btn{
+    color: #1f1818;
+    background-color: rgba(214, 214, 206, 0.523);
+  }
+  .log-btn:hover{
+    background-color: rgba(177, 177, 171, 0.523);
+  }
+  .sign-btn{
+    color: white;
+    background-color: red;
+  }
+  .sign-btn:hover{
+    background-color: rgb(189, 6, 6);
+  }
+  .login svg {
+    margin-left: 8px;
+    color: #111;
+    cursor: pointer;
+  }
+
+  /* NavBar Finish Here............. */
+
+  .best{
+    
+    margin-top: 130px;
+  }
+  .best h1{
+    margin-left: 65px;
+    margin-bottom: 40px;
+    font-weight: 600;
+  }
+  
+.best-cards{
+    display: flex;
+    justify-content: center;
+    gap: 17px;
+}
+  .best-card {
+    width: 400px; 
+    height: 320px;
+    background-color: #f7f7f7;
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;
+  }
+  
+  .best-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+  }
+  .dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+    z-index: 1; /* Ensures overlay is above the image */
+    cursor: pointer;
+  }
+  .dark-overlay:hover{
+    background: rgba(0, 0, 0, 0.55);
+  }
+  
+  .text-overlay {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    z-index: 2; /* Ensures text is above the dark overlay */
+    pointer-events: none;
+  }
+  
+  .text-overlay p {
+    
+    margin: 0;
+  }
+  
+  .text-overlay h2 {
+    font-weight: 700;
+    margin: 10px 0 0 0;
+  }
+
+
+  .best-see-more{
+    text-align: center;
+    margin-top: 18px;
+  }
+  .see-more{
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    background-color: rgba(212, 194, 194, 0.347);
+    font-weight: bold;
+    font-size: 15px;
+  }
+  .see-more:hover{
+    background-color: rgba(179, 188, 188, 0.47);
+  }
+
+
+  /* Best Div ends Here......... */
+
+  .browse h2{
+    margin-top: 50px;
+    margin-left: 65px;
+    margin-bottom: 26px;
+    font-weight: 600;
+  }
+  .dark-overlat {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    z-index: 1; /* Ensures overlay is above the image */
+    cursor: pointer;
+  }
+  .dark-overlat:hover{
+    background: rgba(0, 0, 0, 0.65);
+  }
+  .card-line-1{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  .card-1{
+    position: relative;
+    width: 100%;
+    height: 120px;
+    width: 236px;
+  }
+  .card-1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  .browse-text{
+    position: absolute;
+    font-weight: bold;
+    font-size: 20px;
+    bottom: 40px;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  
+  
+  
+
+  
